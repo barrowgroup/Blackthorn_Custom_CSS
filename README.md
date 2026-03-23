@@ -1,1 +1,1 @@
-removes Organizer from front end of Blackthron event
+removes Organizer from front end of Blackthorn event
