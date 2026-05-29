@@ -1,3 +1,7 @@
 .organizer-name {
 display: none !important;
 }
+
+.bt-card {
+    display: none !important;
+}
