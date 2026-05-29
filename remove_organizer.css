@@ -2,26 +2,16 @@
 display: none !important;
 }
 
-/* Remove the right-hand details column */
-.column-container > .details {
+.column-container {
+    display: block !important;
+    gap: 0 !important;
+}
+
+.details {
     display: none !important;
 }
 
-/* Make the description column full-width */
-.column-container > #description,
-.column-container > .about {
+#description {
     width: 100% !important;
     max-width: 100% !important;
-    flex: 0 0 100% !important;
-}
-
-/* Make the description card itself fill the column */
-#description .bt-card.description {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-.column-container {
-    display: block !important;
 }
