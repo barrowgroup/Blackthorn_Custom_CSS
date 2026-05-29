@@ -21,3 +21,7 @@ display: none !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
 }
+
+.column-container {
+    display: block !important;
+}
