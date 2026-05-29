@@ -2,41 +2,28 @@
 display: none !important;
 }
 
-/* Make the two-column area a single-column layout */
-.column-container {
-    display: block !important;
-    gap: 0 !important;
-    column-gap: 0 !important;
-    row-gap: 0 !important;
-}
-
-/* Remove the right-hand details column */
+/* Hide details column */
 .column-container > .details {
     display: none !important;
 }
 
-/* Expand the description wrapper */
-.column-container > #description,
-.column-container > .about {
+/* Make layout one column */
+.column-container {
     display: block !important;
-    width: 100% !important;
-    max-width: none !important;
-    flex: none !important;
-    margin-right: 0 !important;
-    padding-right: 0 !important;
+    gap: 0 !important;
 }
 
-/* Expand the card itself */
-#description .bt-card.description {
+/* Full-width description */
+#description,
+#description .bt-card.description,
+#description bt-rich-text,
+#description .content {
     width: 100% !important;
     max-width: none !important;
     box-sizing: border-box !important;
 }
 
-section.content,
-section.content .main,
-main .content,
-main .main {
+/* Remove internal right padding from the card */
+#description .bt-card.description {
     padding-right: 0 !important;
-    margin-right: 0 !important;
 }
