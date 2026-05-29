@@ -2,16 +2,33 @@
 display: none !important;
 }
 
+/* Make the two-column area a single-column layout */
 .column-container {
     display: block !important;
     gap: 0 !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
 }
 
-.details {
+/* Remove the right-hand details column */
+.column-container > .details {
     display: none !important;
 }
 
-#description {
+/* Expand the description wrapper */
+.column-container > #description,
+.column-container > .about {
+    display: block !important;
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: none !important;
+    flex: none !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Expand the card itself */
+#description .bt-card.description {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
 }
