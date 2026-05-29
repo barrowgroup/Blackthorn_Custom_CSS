@@ -2,6 +2,12 @@
 display: none !important;
 }
 
-.card.date-and-time {
+.details {
     display: none !important;
+}
+
+.about {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
 }
