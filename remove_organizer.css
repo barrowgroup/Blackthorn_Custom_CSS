@@ -2,12 +2,22 @@
 display: none !important;
 }
 
-.details {
+/* Remove the right-hand details column */
+.column-container > .details {
     display: none !important;
 }
 
-.about {
+/* Make the description column full-width */
+.column-container > #description,
+.column-container > .about {
     width: 100% !important;
-    flex: 1 1 100% !important;
     max-width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
+/* Make the description card itself fill the column */
+#description .bt-card.description {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
