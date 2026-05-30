@@ -39,12 +39,7 @@ display: none !important;
   margin-bottom: 12px;
 }
 
-.logo img,
-.logo .ImgResponsive {
-  width: 220px !important;
-  height: auto !important;
-  max-width: 90vw;
-}
+
 
 .group-name {
   text-align: center;
