@@ -34,14 +34,18 @@ display: none !important;
 }
 
 .logo {
-  width: 100%;
+  display: block !important;
+  width: auto !important;
   text-align: center;
   margin-bottom: 12px;
 }
 
-.logo img,
-.logo .ImgResponsive,
+.logo bt-responsive-img {
+  display: block !important;
+}
+
 .logo img.ImgResponsive.fit {
+  display: block !important;
   width: 300px !important;
   max-width: 90vw !important;
   height: auto !important;
