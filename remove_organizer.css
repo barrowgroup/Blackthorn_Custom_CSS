@@ -58,3 +58,10 @@ bt-search-autocomplete {
   max-width: 90vw !important;
   object-fit: contain !important;
 }
+
+.logo img.ImgResponsive.fit {
+  width: 224px !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
