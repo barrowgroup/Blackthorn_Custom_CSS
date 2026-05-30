@@ -16,3 +16,42 @@ display: none !important;
 .bt-card.description {
     padding-right: 0 !important;
 }
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.logo img,
+.logo .ImgResponsive {
+  width: 220px !important;
+  height: auto !important;
+  max-width: 90vw;
+}
+
+.group-name {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+bt-search-autocomplete {
+  width: 100%;
+  max-width: 600px;
+}
