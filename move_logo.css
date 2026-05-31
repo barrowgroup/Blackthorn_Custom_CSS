@@ -1,34 +1,92 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
+/* ==========================
+   LOGO
+   ========================== */
 
 .logo {
-  text-align: center;
-  margin-bottom: 12px;
+  width: 308px !important;
+  min-height: 129px !important;
+  margin: 0 auto 16px auto !important;
 }
 
-.logo img,
-.logo .ImgResponsive {
-  width: 220px !important;
-  height: auto !important;
-  max-width: 90vw;
+.logo bt-responsive-img {
+  display: block !important;
+  width: 308px !important;
+  height: 129px !important;
 }
+
+.logo img.ImgResponsive.fit {
+  display: block !important;
+  width: 308px !important;
+  height: 129px !important;
+  max-width: 90vw !important;
+  object-fit: contain !important;
+}
+
+/* ==========================
+   TITLE
+   ========================== */
 
 .group-name {
-  text-align: center;
-  margin-bottom: 16px;
+  text-align: center !important;
+  margin-bottom: 16px !important;
+  width: 100% !important;
 }
 
+.group-name h1 {
+  text-align: center !important;
+
+  /* Allow wrapping */
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+
+  line-height: 1.2 !important;
+
+  max-width: 95vw !important;
+  margin: 0 auto !important;
+}
+
+/* ==========================
+   SEARCH + FILTER
+   ========================== */
+
 bt-search-autocomplete {
-  width: 100%;
-  max-width: 600px;
+  grid-column: 1 !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.header-right {
+  grid-column: 2 !important;
+  margin-top: 0 !important;
+  align-self: center !important;
+}
+
+/* ==========================
+   MOBILE
+   ========================== */
+
+@media (max-width: 768px) {
+
+  .logo,
+  .logo bt-responsive-img,
+  .logo img.ImgResponsive.fit {
+    width: 260px !important;
+    height: 109px !important;
+    min-height: 109px !important;
+  }
+
+  .group-name h1 {
+    font-size: 1.3rem !important;
+    line-height: 1.2 !important;
+    max-width: 95vw !important;
+  }
+
+  bt-search-autocomplete {
+    width: 100% !important;
+  }
+
+  .header-right {
+    margin-top: 0 !important;
+  }
 }
