@@ -33,26 +33,6 @@ display: none !important;
   text-align: center;
 }
 
-.logo {
-  display: block !important;
-  width: auto !important;
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-.logo bt-responsive-img {
-  display: block !important;
-}
-
-.logo img.ImgResponsive.fit {
-  display: block !important;
-  width: 300px !important;
-  max-width: 90vw !important;
-  height: auto !important;
-  max-height: none !important;
-  object-fit: contain !important;
-}
-
 .group-name {
   text-align: center;
   margin-bottom: 16px;
