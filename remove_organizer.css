@@ -26,6 +26,10 @@ display: none !important;
 
 
 
+/* ==========================
+   HEADER LAYOUT
+   ========================== */
+
 .appbar,
 .appbar-header,
 .container,
@@ -37,19 +41,29 @@ display: none !important;
   overflow: visible !important;
 }
 
+/* Stack logo + title above search */
+
 .container {
-  display: flex !important;
-  flex-direction: column !important;
+  display: grid !important;
+  grid-template-columns: 1fr auto !important;
+  column-gap: 8px !important;
   align-items: center !important;
 }
 
 .header-left {
+  grid-column: 1 / -1 !important;
+
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+
   width: 100% !important;
   text-align: center !important;
 }
+
+/* ==========================
+   LOGO
+   ========================== */
 
 .logo {
   width: 308px !important;
@@ -71,25 +85,52 @@ display: none !important;
   object-fit: contain !important;
 }
 
+/* ==========================
+   TITLE
+   ========================== */
+
 .group-name {
   text-align: center !important;
   margin-bottom: 16px !important;
+  width: 100% !important;
 }
 
 .group-name h1 {
   text-align: center !important;
+
+  /* Allow wrapping */
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+
+  line-height: 1.2 !important;
+
+  max-width: 95vw !important;
+  margin: 0 auto !important;
 }
 
+/* ==========================
+   SEARCH + FILTER
+   ========================== */
+
 bt-search-autocomplete {
+  grid-column: 1 !important;
   width: 100% !important;
-  max-width: 600px !important;
+  max-width: none !important;
 }
 
 .header-right {
-  margin-top: 12px !important;
+  grid-column: 2 !important;
+  margin-top: 0 !important;
+  align-self: center !important;
 }
 
+/* ==========================
+   MOBILE
+   ========================== */
+
 @media (max-width: 768px) {
+
   .logo,
   .logo bt-responsive-img,
   .logo img.ImgResponsive.fit {
@@ -98,7 +139,17 @@ bt-search-autocomplete {
     min-height: 109px !important;
   }
 
-  bt-search-autocomplete {
+  .group-name h1 {
+    font-size: 1.3rem !important;
+    line-height: 1.2 !important;
     max-width: 95vw !important;
+  }
+
+  bt-search-autocomplete {
+    width: 100% !important;
+  }
+
+  .header-right {
+    margin-top: 0 !important;
   }
 }
