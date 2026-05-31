@@ -26,13 +26,21 @@ display: none !important;
 
 
 
-/* Center header layout */
+.appbar,
+.appbar-header,
+.container,
+.header-left,
+.logo {
+  height: auto !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
 
 .container {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  overflow: visible !important;
 }
 
 .header-left {
@@ -41,42 +49,27 @@ display: none !important;
   align-items: center !important;
   width: 100% !important;
   text-align: center !important;
-  overflow: visible !important;
 }
-
-/* Logo */
 
 .logo {
-  width: 320px !important;
-  height: 120px !important;
-  min-height: 120px !important;
+  width: 308px !important;
+  min-height: 129px !important;
   margin: 0 auto 16px auto !important;
-  position: relative !important;
-  overflow: visible !important;
 }
 
-/* Hide Blackthorn image */
-
-.logo img {
-  display: none !important;
-}
-
-/* Show Salesforce image directly */
-
-.logo::before {
-  content: "" !important;
+.logo bt-responsive-img {
   display: block !important;
-  width: 320px !important;
-  height: 120px !important;
-
-  background-image: url("https://barrowgroup--c.na213.content.force.com/servlet/servlet.ImageServer?id=0158c00000SnP6t&oid=00D8c000001jTRR&lastMod=1652187927000") !important;
-
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: contain !important;
+  width: 308px !important;
+  height: 129px !important;
 }
 
-/* Title */
+.logo img.ImgResponsive.fit {
+  display: block !important;
+  width: 308px !important;
+  height: 129px !important;
+  max-width: 90vw !important;
+  object-fit: contain !important;
+}
 
 .group-name {
   text-align: center !important;
@@ -87,26 +80,22 @@ display: none !important;
   text-align: center !important;
 }
 
-/* Search */
-
 bt-search-autocomplete {
   width: 100% !important;
   max-width: 600px !important;
 }
 
-/* Mobile */
+.header-right {
+  margin-top: 12px !important;
+}
 
 @media (max-width: 768px) {
-
-  .logo {
+  .logo,
+  .logo bt-responsive-img,
+  .logo img.ImgResponsive.fit {
     width: 260px !important;
-    height: 100px !important;
-    min-height: 100px !important;
-  }
-
-  .logo::before {
-    width: 260px !important;
-    height: 100px !important;
+    height: 109px !important;
+    min-height: 109px !important;
   }
 
   bt-search-autocomplete {
