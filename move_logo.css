@@ -39,21 +39,21 @@
    ========================== */
 
 .logo {
-  width: 308px !important;
-  min-height: 129px !important;
+  width: 231px !important;
+  min-height: 97px !important;
   margin: 0 auto 16px auto !important;
 }
 
 .logo bt-responsive-img {
   display: block !important;
-  width: 308px !important;
-  height: 129px !important;
+  width: 231px !important;
+  height: 97px !important;
 }
 
 .logo img.ImgResponsive.fit {
   display: block !important;
-  width: 308px !important;
-  height: 129px !important;
+  width: 231px !important;
+  height: 97px !important;
   max-width: 90vw !important;
   object-fit: contain !important;
 }
@@ -107,9 +107,9 @@ bt-search-autocomplete {
   .logo,
   .logo bt-responsive-img,
   .logo img.ImgResponsive.fit {
-    width: 260px !important;
-    height: 109px !important;
-    min-height: 109px !important;
+    width: 195px !important;
+    height: 82px !important;
+    min-height: 82px !important;
   }
 
   .group-name h1 {
