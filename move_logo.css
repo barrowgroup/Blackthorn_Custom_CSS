@@ -126,3 +126,16 @@ bt-search-autocomplete {
     margin-top: 0 !important;
   }
 }
+
+
+
+.logo::after {
+  content: "barrowgroup.org";
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+}
