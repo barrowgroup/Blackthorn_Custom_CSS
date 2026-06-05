@@ -5,3 +5,7 @@ aside.sidebar[aria-label="Event Filter Sidebar"] {
 section.appbar-header {
     display: none !important;
 }
+
+.ImgResponsive.cover {
+    display: none !important;
+}
