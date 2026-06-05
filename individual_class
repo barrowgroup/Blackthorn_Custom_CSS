@@ -1,0 +1,7 @@
+aside.sidebar[aria-label="Event Filter Sidebar"] {
+    display: none !important;
+}
+
+section.appbar-header {
+    display: none !important;
+}
