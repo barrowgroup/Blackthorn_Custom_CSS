@@ -9,17 +9,3 @@ section.appbar-header {
 
 
 
-img[alt="Class Photo"],
-.ImgResponsive.cover {
-    display: none !important;
-}
-
-.image-container,
-.card-image,
-.event-image,
-[class*="image"] {
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-}
