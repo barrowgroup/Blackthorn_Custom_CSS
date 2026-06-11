@@ -14,12 +14,11 @@ body {
   display: none;
 }
 
-.appbar {
-    border-bottom: none !important;
-    box-shadow: none !important;
-}
 
-.appbar-header {
+.appbar,
+.appbar-header,
+.content-container {
+    border-top: none !important;
     border-bottom: none !important;
     box-shadow: none !important;
 }
