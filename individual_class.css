@@ -13,3 +13,13 @@ body {
 .grid-title {
   display: none;
 }
+
+.appbar {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.appbar-header {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
