@@ -5,3 +5,11 @@ aside.sidebar[aria-label="Event Filter Sidebar"] {
 section.appbar-header {
     display: none !important;
 }
+
+body {
+  background-color: #ffffff;
+}
+
+.grid-title {
+  display: none;
+}
