@@ -1,4 +1,3 @@
-.bt-card:has(.event-date-detail),
-.bt-card:has(.event-overview-pricing) {
+.event-overview-pricing {
     display: none !important;
 }
