@@ -1,1 +1,21 @@
+/* Remove Date & Time card completely */
+#date-and-time {
+    display: none !important;
+}
 
+/* Remove Pricing card completely */
+#pricing {
+    display: none !important;
+}
+
+/* Remove any leftover spacing in the sidebar */
+.details {
+    gap: 0 !important;
+    row-gap: 0 !important;
+}
+
+/* Pull Location card up */
+#location {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
