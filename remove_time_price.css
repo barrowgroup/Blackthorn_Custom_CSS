@@ -1,4 +1,9 @@
-.event-date-detail,
-.event-overview-pricing {
-    display: none !important;
+/* Hide full Date & Time card */
+div.bt-card:has(div.event-date-detail) {
+  display: none !important;
+}
+
+/* Hide full Pricing card */
+div.bt-card:has(div.event-overview-pricing) {
+  display: none !important;
 }
