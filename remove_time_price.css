@@ -1,7 +1,21 @@
-.bt-card:has(.event-date-detail),
-.bt-card:has(.event-overview-pricing) {
-  display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 0 !important;
+/* Remove Date & Time card completely */
+#date-and-time {
+    display: none !important;
+}
+
+/* Remove Pricing card completely */
+#pricing {
+    display: none !important;
+}
+
+/* Remove any leftover spacing in the sidebar */
+.details {
+    gap: 0 !important;
+    row-gap: 0 !important;
+}
+
+/* Pull Location card up */
+#location {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
