@@ -22,3 +22,9 @@ body {
     border-bottom: none !important;
     box-shadow: none !important;
 }
+
+
+
+img.ImgResponsive.cover.hideAltText {
+  display: none !important;
+}
