@@ -25,6 +25,18 @@ body {
 
 
 
-img.ImgResponsive.cover.hideAltText {
-  display: none !important;
+/* Hide the image column entirely */
+.event-item-image {
+    display: none !important;
+}
+
+/* Remove the fixed image width from the layout */
+.event-item-container {
+    grid-template-columns: auto 1fr !important;
+}
+
+/* Let details fill available space */
+.event-details {
+    width: 100% !important;
+    max-width: 100% !important;
 }
