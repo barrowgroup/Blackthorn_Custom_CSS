@@ -24,19 +24,20 @@ body {
 }
 
 
-
-/* Hide the image column entirely */
-.event-item-image {
-    display: none !important;
+/* Blackthorn Maple list: remove default/missing image blocks */
+.event-item-image,
+.event-item-image bt-responsive-img,
+.event-item-image img[src*="d_missing-image-01.jpg"] {
+  display: none !important;
 }
 
-/* Remove the fixed image width from the layout */
+/* Collapse the empty image column */
 .event-item-container {
-    grid-template-columns: auto 1fr !important;
+  grid-template-columns: auto 1fr !important;
 }
 
-/* Let details fill available space */
+/* Let event text fill the space */
 .event-details {
-    width: 100% !important;
-    max-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
